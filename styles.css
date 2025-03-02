@@ -187,3 +187,41 @@ main {
     background-color: var(--background-color);
 }
 
+/* SECTION 3 : ABOUT */
+
+.about-section {
+    margin: 90px 0px;
+}
+
+.about-section .about-text {
+    color: var(--tertiary-text-color);
+}
+
+.about-section .about-text h2 {
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+}
+
+.about-section .about-text h2 span {
+    color: var(--primary-text-color);
+}
+
+.about-section .about-text h2::after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    width: 150px;
+    height: 1px; 
+    background-color:var(--primary-text-color);
+}
+
+@media (min-width: 970px) {
+    .about-text{
+        width: 60%;
+    }
+}
+
