@@ -197,7 +197,7 @@ main {
     color: var(--tertiary-text-color);
 }
 
-.about-section .about-text h2 {
+h2 {
     color: var(--secondary-text-color);
     margin-bottom: 15px;
     font-size: 32px;
@@ -205,14 +205,14 @@ main {
     position: relative;
 }
 
-.about-section .about-text h2 span {
+h2 span {
     color: var(--primary-text-color);
 }
 
-.about-section .about-text h2::after {
+h2::after {
     content: "";
     position: absolute;
-    left: 120px;
+    left: auto;
     top: 50%;
     width: 150px;
     height: 1px; 
@@ -224,4 +224,84 @@ main {
         width: 60%;
     }
 }
+
+/* SECTION 4 : PROJECTS */
+
+.projects-section .projects-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+    margin-top: 48px;
+    margin-bottom: 40px;
+}
+
+ .projects-list .project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 8px 16px;
+    color: var(--tertiary-text-color);
+    padding: 10px;
+    border-bottom: 1px solid var(--tertiary-text-color);
+}
+
+ .projects-list .project {
+    border: 1px solid var(--tertiary-text-color);
+}
+
+ .project .project-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--tertiary-text-color);
+}
+
+.project .project-name {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    padding: 10px;
+}
+
+.project .project-description {
+    color: var(--tertiary-text-color);
+    padding: 10px;
+}
+
+.project .project-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-text-color);
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.project-content a:first-of-type {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.project .project-link:hover {
+    background-color: var(--primary-op);
+}
+
+@media (max-width: 1024px) {
+    .projects-section .projects-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-section .projects-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+
+
+
+
 
