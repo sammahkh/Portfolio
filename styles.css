@@ -42,7 +42,7 @@ header {
     height: 70px;
 }
 
-nav ul { 
+.header-links { 
   display: flex;
   list-style-type: none;
   gap: 32px;
@@ -50,10 +50,6 @@ nav ul {
 
 nav ul li:first-child a { 
    color: var(--secondary-text-color);
-}
-
-nav a {
-    color: var(--tertiary-text-color);
 }
 
 nav a:hover {
