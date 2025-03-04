@@ -18,8 +18,13 @@ html {
 body {
     background-color: var(--background-color);
     font-family: 'Fira Code', sans-serif;
+}
+
+.container {
     display: flex;
-    justify-content: center;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a {
@@ -35,6 +40,13 @@ header {
     align-items: center;
     width: 80%;  
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: var(--background-color);
 }
 
 .logo img {
