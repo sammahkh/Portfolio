@@ -19,6 +19,9 @@ html {
 body {
     background-color: var(--background-color);
     font-family: 'Fira Code', sans-serif;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,6 +41,13 @@ header {
     align-items: center;
     width: 80%;  
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: var(--background-color);
 }
 
 .logo img {
@@ -45,7 +55,7 @@ header {
     height: 70px;
 }
 
-nav ul { 
+.header-links { 
   display: flex;
   list-style-type: none;
   gap: 32px;
@@ -53,10 +63,6 @@ nav ul {
 
 nav ul li:first-child a { 
    color: var(--secondary-text-color);
-}
-
-nav a {
-    color: var(--tertiary-text-color);
 }
 
 nav a:hover {
