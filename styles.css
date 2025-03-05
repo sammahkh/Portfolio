@@ -1,3 +1,75 @@
-body{
-    background-color: #282C33;
+:root {
+    --primary-text-color:#C778DD;
+    --secondary-text-color:#FFFFFF;
+    --tertiary-text-color:#ABB2BF;
+    --background-color:#282C33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Fira Code', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: var(--tertiary-text-color);
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;  
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: var(--background-color);
+}
+
+.logo img {
+    width: 120px;
+    height: 70px;
+}
+
+.header-links { 
+  display: flex;
+  list-style-type: none;
+  gap: 32px;
+}
+
+nav ul li:first-child a { 
+   color: var(--secondary-text-color);
+}
+
+nav a:hover {
+    color: var(--secondary-text-color);
+}
+
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;  
+    }
 }
