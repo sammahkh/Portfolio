@@ -21,13 +21,6 @@ body {
     font-family: 'Fira Code', sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 a {
     color: var(--tertiary-text-color);
     text-decoration: none;
@@ -70,7 +63,12 @@ nav a:hover {
 
 /* SECTION 1 : HERO */
 
-main {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
     width: 80%;
 }
 
@@ -110,17 +108,19 @@ main {
     background-color: var(--primary-op);
 }
 
-.hero-section .hero-illustrations {
+.hero-illustrations {
     display: flex;
     flex-direction: column;
 }
 
 .hero-illustrations .hero-avatar img {
     border-radius: 50%;
-    width: 380px;
+    width: 100%;  
+    max-width: 380px;  
+    height: auto;
 }
 
-.hero-illustrations .hero-status {
+.hero-status {
     padding: 8px;
     border: 1px solid var(--tertiary-text-color);
     color: var(--tertiary-text-color);
@@ -128,7 +128,7 @@ main {
     justify-content: space-evenly;  
 }
 
-.hero-illustrations .hero-status::before {
+.hero-status::before {
     content: "";
     width: 16px;
     background-color: var(--primary-op);
