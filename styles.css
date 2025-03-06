@@ -153,4 +153,39 @@ nav a:hover {
     }
 }
 
+/* SECTION 2 : QOUTE */
+
+.quote {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.quote-text {
+    color: var(--secondary-text-color);
+    border: 1px solid var(--tertiary-text-color);
+    padding: 30px 50px;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+}
+
+.quote-text::before, .quote-text::after {
+    content: '"';
+    position: absolute;
+    color: var(--tertiary-text-color);
+    font-size: 64px;
+    font-weight: 700;
+    background-color: var(--background-color);
+}
+  
+.quote-text::before {
+    top: -25px;
+    left: 10px;
+}
+
+.quote-text::after {
+    bottom: -60px;
+    right: 10px;
+}
 
