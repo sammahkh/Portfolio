@@ -170,25 +170,22 @@ nav a:hover {
     position: relative;
 }
 
-.quote-text::before {
+.quote-text::before, .quote-text::after {
     content: '"';
-    top: -25px;
-    left: 10px;
     position: absolute;
     color: var(--tertiary-text-color);
     font-size: 64px;
     font-weight: 700;
     background-color: var(--background-color);
 }
+  
+.quote-text::before {
+    top: -25px;
+    left: 10px;
+}
 
 .quote-text::after {
-    content: '"';
     bottom: -60px;
     right: 10px;
-    position: absolute;
-    color: var(--tertiary-text-color);
-    font-size: 64px;
-    font-weight: 700;
-    background-color: var(--background-color);
 }
 
