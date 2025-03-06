@@ -1,5 +1,6 @@
 :root {
     --primary-text-color:#C778DD;
+    --primary-op:#c778dd34;;
     --secondary-text-color:#FFFFFF;
     --tertiary-text-color:#ABB2BF;
     --background-color:#282C33;
@@ -20,13 +21,6 @@ body {
     font-family: 'Fira Code', sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 a {
     color: var(--tertiary-text-color);
     text-decoration: none;
@@ -39,7 +33,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 80%;  
-    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -68,8 +61,96 @@ nav a:hover {
     color: var(--secondary-text-color);
 }
 
+/* SECTION 1 : HERO */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 60px;
+}
+
+.hero-section .hero-content h1{
+    font-size: 32px;
+    color: var(--secondary-text-color);
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-content span{
+    color: var(--primary-text-color);
+}
+
+.hero-section .hero-content p{
+    color: var(--tertiary-text-color);
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-section .hero-content a {
+    color: var(--secondary-text-color);
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-text-color);
+    font-weight: 500;
+}
+
+.hero-section .hero-content a:hover {
+    background-color: var(--primary-op);
+}
+
+.hero-illustrations {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-illustrations .hero-avatar img {
+    border-radius: 50%;
+    width: 100%;  
+    max-width: 380px;  
+    height: auto;
+}
+
+.hero-status {
+    padding: 8px;
+    border: 1px solid var(--tertiary-text-color);
+    color: var(--tertiary-text-color);
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.hero-status::before {
+    content: "";
+    width: 16px;
+    background-color: var(--primary-op);
+    border: 1px solid var(--primary-text-color);
+}
+
 @media (max-width: 768px) {
     header {
       flex-direction: column;  
     }
 }
+
+@media (max-width: 970px) {
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-illustrations{
+        margin-bottom: 50px;
+    }
+    .hero-section .hero-content h1 {
+        font-size: 25px;
+    }
+}
+
+
