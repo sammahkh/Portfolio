@@ -19,10 +19,6 @@ html {
 body {
     background-color: var(--background-color);
     font-family: 'Fira Code', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 a {
@@ -37,7 +33,13 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 80%;  
-    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: var(--background-color);
 }
 
 .logo img {
@@ -45,7 +47,7 @@ header {
     height: 70px;
 }
 
-nav ul { 
+.header-links { 
   display: flex;
   list-style-type: none;
   gap: 32px;
@@ -55,17 +57,18 @@ nav ul li:first-child a {
    color: var(--secondary-text-color);
 }
 
-nav a {
-    color: var(--tertiary-text-color);
-}
-
 nav a:hover {
     color: var(--secondary-text-color);
 }
 
 /* SECTION 1 : HERO */
 
-main {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
     width: 80%;
 }
 
@@ -105,17 +108,19 @@ main {
     background-color: var(--primary-op);
 }
 
-.hero-section .hero-illustrations {
+.hero-illustrations {
     display: flex;
     flex-direction: column;
 }
 
 .hero-illustrations .hero-avatar img {
     border-radius: 50%;
-    width: 380px;
+    width: 100%;  
+    max-width: 380px;  
+    height: auto;
 }
 
-.hero-illustrations .hero-status {
+.hero-status {
     padding: 8px;
     border: 1px solid var(--tertiary-text-color);
     color: var(--tertiary-text-color);
@@ -123,7 +128,7 @@ main {
     justify-content: space-evenly;  
 }
 
-.hero-illustrations .hero-status::before {
+.hero-status::before {
     content: "";
     width: 16px;
     background-color: var(--primary-op);
