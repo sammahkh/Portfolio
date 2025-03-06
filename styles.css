@@ -195,11 +195,11 @@ nav a:hover {
     margin: 90px 0px;
 }
 
-.about-section .about-text {
+.about-text {
     color: var(--tertiary-text-color);
 }
 
-.about-section .about-text h2 {
+.about-text h2 {
     color: var(--secondary-text-color);
     margin-bottom: 15px;
     font-size: 32px;
@@ -207,11 +207,11 @@ nav a:hover {
     position: relative;
 }
 
-.about-section .about-text h2 span {
+.about-text h2 span {
     color: var(--primary-text-color);
 }
 
-.about-section .about-text h2::after {
+.about-text h2::after {
     content: "";
     position: absolute;
     left: 120px;
