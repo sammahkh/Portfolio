@@ -161,7 +161,7 @@ nav a:hover {
     margin-top: 80px;
 }
 
-.quote .quote-text {
+.quote-text {
     color: var(--secondary-text-color);
     border: 1px solid var(--tertiary-text-color);
     padding: 30px 50px;
@@ -170,7 +170,7 @@ nav a:hover {
     position: relative;
 }
 
-.quote .quote-text::before {
+.quote-text::before {
     content: '"';
     top: -25px;
     left: 10px;
@@ -181,7 +181,7 @@ nav a:hover {
     background-color: var(--background-color);
 }
 
-.quote .quote-text::after {
+.quote-text::after {
     content: '"';
     bottom: -60px;
     right: 10px;
