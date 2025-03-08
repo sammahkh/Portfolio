@@ -189,3 +189,46 @@ nav a:hover {
     right: 10px;
 }
 
+/* SECTION 3 : ABOUT */
+
+.about-section {
+    margin: 90px 0px;
+}
+
+.about-text-container {
+    color: var(--tertiary-text-color);
+}
+
+.about-title {
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+}
+
+.about-title span {
+    color: var(--primary-text-color);
+}
+
+.about-title::after {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    width: 150px;
+    height: 1px; 
+    background-color:var(--primary-text-color);
+}
+
+.about-description {
+ margin-bottom: 20px;
+ line-height: 25px;
+}
+
+@media (min-width: 970px) {
+    .about-text-container{
+        width: 60%;
+    }
+}
+
