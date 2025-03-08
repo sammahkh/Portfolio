@@ -234,7 +234,7 @@ h2::after {
 
 /* SECTION 4 : PROJECTS */
 
-.projects-section .projects-list {
+.projects-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -243,7 +243,7 @@ h2::after {
     margin-bottom: 40px;
 }
 
- .projects-list .project-techs {
+.project-techs {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -253,29 +253,29 @@ h2::after {
     border-bottom: 1px solid var(--tertiary-text-color);
 }
 
- .projects-list .project {
+.project {
     border: 1px solid var(--tertiary-text-color);
 }
 
- .project .project-image {
+.project-image {
     width: 100%;
     height: auto;
     border-bottom: 1px solid var(--tertiary-text-color);
 }
 
-.project .project-name {
+.project-name {
     font-size: 22px;
     font-weight: 500;
     color: var(--secondary-text-color);
     padding: 10px;
 }
 
-.project .project-description {
+.project-description {
     color: var(--tertiary-text-color);
     padding: 10px;
 }
 
-.project .project-link {
+.project-link {
     display: inline-block;
     padding: 8px 16px;
     border: 1px solid var(--primary-text-color);
@@ -289,19 +289,19 @@ h2::after {
     margin-left: 10px;
 }
 
-.project .project-link:hover {
+.project-link:hover {
     background-color: var(--primary-op);
 }
 
 @media (max-width: 1024px) {
-    .projects-section .projects-list {
+    .projects-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .projects-section .projects-list {
+    .projects-list {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
