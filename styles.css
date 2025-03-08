@@ -195,11 +195,11 @@ nav a:hover {
     margin: 90px 0px;
 }
 
-.about-text {
+.about-text-container {
     color: var(--tertiary-text-color);
 }
 
-.about-text h2 {
+.about-title {
     color: var(--secondary-text-color);
     margin-bottom: 15px;
     font-size: 32px;
@@ -207,11 +207,11 @@ nav a:hover {
     position: relative;
 }
 
-.about-text h2 span {
+.about-title span {
     color: var(--primary-text-color);
 }
 
-.about-text h2::after {
+.about-title::after {
     content: "";
     position: absolute;
     left: 120px;
@@ -221,8 +221,13 @@ nav a:hover {
     background-color:var(--primary-text-color);
 }
 
+.about-description {
+ margin-bottom: 20px;
+ line-height: 25px;
+}
+
 @media (min-width: 970px) {
-    .about-text{
+    .about-text-container{
         width: 60%;
     }
 }
