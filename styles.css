@@ -306,16 +306,16 @@ h2::after {
     margin-top: 80px;
 }
 
-.skills-section .skills-content {
+.skills-content {
     display: flex;
     justify-content:space-between;
 }
 
-.skills-content .skills-illustrations {
+.skills-illustrations {
     flex: 1 1 0;
 }
 
-.skills-content .skills-list {
+.skills-list {
     display: flex;
     justify-content: space-between;
     align-items: center;   
@@ -323,20 +323,20 @@ h2::after {
     flex: 1 1 0;
 }
 
-.skills-list .skill-block {
+.skill-block {
     border: 1px solid var(--tertiary-text-color);
     padding: 15px;
     margin-bottom: 10px;
 }
 
-.skill-block  .skill-block-name {
+.skill-block-name {
     font-weight: 600;
     padding: 8px;
     color: var(--secondary-text-color);
     border-bottom: 1px solid var(--tertiary-text-color);
 }
 
-.skill-block .skill-block-list {
+.skill-block-list {
     margin-top: 10px;
     color: var(--tertiary-text-color);
     list-style: none;
