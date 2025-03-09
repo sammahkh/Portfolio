@@ -305,6 +305,56 @@ h2::after {
     }
 }
 
+/* SECTION 5 : SKILLS */
+
+.skills-section {
+    margin-top: 80px;
+    width:100%;
+}
+
+.skills-content {
+    display: flex;
+    justify-content:space-between;
+}
+
+.skills-illustrations {
+    flex: 1 1 0;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    flex-wrap: wrap;
+    flex: 1 1 0;
+}
+
+.skill-block {
+    border: 1px solid var(--tertiary-text-color);
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.skill-block-name {
+    font-weight: 600;
+    padding: 8px;
+    color: var(--secondary-text-color);
+    border-bottom: 1px solid var(--tertiary-text-color);
+}
+
+.skill-block-list {
+    margin-top: 10px;
+    color: var(--tertiary-text-color);
+    list-style: none;
+}
+
+@media (max-width: 850px) {
+    .skills-content {
+      flex-direction: column;  
+    }
+}
+
+
 
 
 
