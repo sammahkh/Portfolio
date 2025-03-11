@@ -427,7 +427,7 @@ footer {
     margin: 20px 0px;
 }
 
-.footer-inner .footer-info , .footer-title {
+.footer-info , .footer-title {
     color: var(--secondary-text-color);
 
 }
@@ -437,7 +437,7 @@ footer {
     font-size: 24px;
 }
 
-.footer-inner .footer-info a {
+.footer-info a {
     color: var(--tertiary-text-color);
 }
 
